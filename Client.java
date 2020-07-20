@@ -161,6 +161,9 @@ public class Client {
 			try {
 				mapaImagens.clear();
 				viewer.setIcon(null);
+				String[] empty = new String[1];
+				empty[0] = "                                         ";
+				listaDireita.setListData(empty);
 				sendToServer(req);
 			} catch (IOException e) {
 

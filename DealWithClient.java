@@ -18,7 +18,7 @@ public class DealWithClient extends Thread {
 		this.out = out;
 		this.in = in;
 		this.dest = dest;
-		requestQueue = new BloquingQueue<>();
+		this.requestQueue = new BloquingQueue<>();
 	}
 	
 	public void run() {
